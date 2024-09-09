@@ -1,3 +1,5 @@
+from typing import Dict
+
 from django.http import HttpResponse
 from django.shortcuts import render
 
@@ -16,8 +18,6 @@ def about(request):
     context = {
         'title': 'About page - Django Store',
         'content': 'About page',
-        'text_on_page': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur inventore perspiciatis '
-                        'quae tempora ullam veritatis. Aliquid esse fugit harum, nemo porro quae sapiente. Deserunt '
-                        'ea, natus recusandae repudiandae tempora voluptatibus.'
+        'text_on_page': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit'
     }
     return render(request, 'main/about.html', context)
